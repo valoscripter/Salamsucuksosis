@@ -1,5 +1,5 @@
 local HttpService=game:GetService("HttpService")local Players=game:GetService("Players")local player=Players.LocalPlayer
-local API_URL="https://sydearr-sohbetss-default-rtdb.firebaseio.com/messages.json"
+local API_URL="https://sydearr-chat1-default-rtdb.firebaseio.com/messages.json"
 local function createUICorner(p,r)local c=Instance.new("UICorner")c.CornerRadius=UDim.new(0,r or 8)c.Parent=p return c end
 local function createProfileImage(userId,size)local img=Instance.new("ImageButton")img.Size=size or UDim2.new(0,36,0,36)img.BackgroundTransparency=0 img.BackgroundColor3=Color3.fromRGB(70,70,70)img.Image="https://www.roblox.com/headshot-thumbnail/image?userId="..userId.."&width=48&height=48&format=png"img.ScaleType=Enum.ScaleType.Fit img.ClipsDescendants=true img.AutoButtonColor=true return img end
 local function formatTime(timestamp)local time=os.date("*t",timestamp)return string.format("%02d:%02d",time.hour,time.min)end
