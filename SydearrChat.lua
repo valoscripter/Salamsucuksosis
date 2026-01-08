@@ -5,8 +5,8 @@ local function createProfileImage(userId,size)local img=Instance.new("ImageButto
 local function formatTime(timestamp)local time=os.date("*t",timestamp)return string.format("%02d:%02d",time.hour,time.min)end
 
 local ScreenGui=Instance.new("ScreenGui")
-ScreenGui.Name="SydearrSohbet"
-ScreenGui.ResetOnSpawn = false -- Ölünce kapanmasını engeller
+ScreenGui.Name="Sydearr"
+ScreenGui.ResetOnSpawn = false 
 ScreenGui.Parent=player:WaitForChild("PlayerGui")
 local Frame=Instance.new("Frame")Frame.Size=UDim2.new(0,450,0,370)Frame.Position=UDim2.new(0.5,-225,0.5,-215)Frame.BackgroundColor3=Color3.fromRGB(25,25,25)Frame.BorderSizePixel=0 Frame.Parent=ScreenGui createUICorner(Frame,12)
 
